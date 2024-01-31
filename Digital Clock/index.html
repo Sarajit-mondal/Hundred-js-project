@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital clock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main class="bg-slate-500 h-dvh w-full flex items-center justify-center">
+      <div
+        class="flex gap-x-8 gap-y-4 [&_span]:bg-green-500 [&_span]:p-5 [&>div]:flex [&>div]:flex-col text-center items-end"
+      >
+        <div>
+          <span id="hours" class="text-3xl font-bold">05</span>
+          <span>Hours</span>
+        </div>
+        <div>
+          <span id="minutes" class="text-3xl font-bold">10</span>
+          <span>Minutes</span>
+        </div>
+        <div>
+          <span id="seconds" class="text-3xl font-bold">09</span>
+          <span>seconds</span>
+        </div>
+        <div>
+          <span id="ampm" class="text-xl font-bold p-1">AM</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
