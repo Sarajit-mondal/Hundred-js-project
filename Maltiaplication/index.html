@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maltiaplication</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="bg-yellow-500 flex items-center justify-center h-svh text-center"
+    >
+      <div class="w-2/4 bg-white rounded-xl shadow-lg p-6 space-y-5">
+        <div class="flex justify-between [&_span]:font-bold">
+          <p>Right : <span id="score" class="text-green-500">5</span></p>
+          <p>Answed : <span id="ans" class="text-green-500">5</span></p>
+          <p>Worng : <span id="worng" class="text-red-600">2</span></p>
+        </div>
+        <h1 id="miltiply" class="text-xl md:text-3xl font-semibold text-nowrap">
+          What is
+          <span class="text-green-500 text-xl font-bold">1</span> miltiply by
+          <span>2</span>
+        </h1>
+        <form action="" id="form">
+          <input
+            id="input"
+            type="number"
+            placeholder="Input your Answer"
+            class="block w-full text-center p-2 border-4 border-green-600 text-xl font-bold placeholder:text-xl placeholder:font-normal outline-none"
+          />
+          <input
+            type="submit"
+            value="Submit"
+            class="block bg-green-600 w-full p-2 rounded-lg my-4 active:-scale-x-95 hover:opacity-90"
+          />
+        </form>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
