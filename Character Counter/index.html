@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="bg-orange-500 flex items-center justify-center h-svh text-center"
+    >
+      <div class="w-3/4 md:w-2/4 bg-pink-300 px-8 py-10 rounded-2xl space-y-5">
+        <h1 class="text-2xl font-bold text-nowrap">
+          Real Time Charater Counter
+        </h1>
+        <textarea
+          class="w-full resize-none p-5"
+          id="textarea"
+          maxlength="50"
+          placeholder="Please write your text here..."
+        ></textarea>
+
+        <div class="flex justify-between">
+          <p>
+            Total Charaters :
+            <span id="total" class="text-green-600 text-xl font-bold">0</span>
+          </p>
+          <p>
+            Remaining :
+            <span id="remaining" class="text-red-600 text-xl font-bold"
+              >50</span
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
