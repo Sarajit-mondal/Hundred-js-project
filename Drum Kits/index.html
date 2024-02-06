@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kits</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .drum-container div:hover {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="bg-pink-300 h-svh flex items-center justify-center text-center"
+    >
+      <div>
+        <h1 class="text-4xl font-extrabold shadow-md inline">Drum Kits</h1>
+        <div
+          class="drum-container flex flex-wrap justify-center mt-10 gap-10 [&>div]:w-52 [&>div]:h-20 [&>div]:bg-white [&>div]:shadow-2xl [&>div]:rounded-xl [&>div]:bg-[url('./images/kick.png')] [&>div]:bg-cover [&>div]:before:absolute [&>div]:before:content-[''] [&>div]:flex [&>div]:items-center [&>div]:justify-center [&>div]:text-xl [&>div]:font-bold [&>div]:text-white [&>div]:ease-in-out [&>div]:duration-200"
+        >
+          <!-- <div>kick</div>
+          <div>kick</div>
+          <div>kick</div> -->
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
