@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>God name counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="text-center w-full h-svh flex justify-center items-center">
+      <div>
+        <h1
+          class="bg-gradient-to-r from-cyan-400 to-green-600 bg-clip-text text-transparent text-4xl md:text-7xl inline-block font-bold"
+        >
+          God Name Counter
+        </h1>
+        <div
+          class="[&_.add]:bg-red-500 [&_.sub]:bg-green-500 [&_button]:py-3 [&_button]:px-7 [&_button]:font-bold [&_button]:text-white [&_button]:rounded-lg flex flex-col md:flex-row gap-10 items-center justify-center md:flex-wrap m-10"
+        >
+          <!-- left counter -->
+          <div class="flex flex-col gap-y-7 max-w-[350px] p-5 shadow-xl">
+            <p class="text-3xl">Joy Shi Krishna</p>
+            <span id="krishna-count" class="text-4xl">0</span>
+            <div>
+              <button class="add shadow-lg hover:shadow-red-500/50">
+                INCRIMENT
+              </button>
+              <button class="sub shadow-lg hover:shadow-red-500/50">
+                DECRIMENT
+              </button>
+            </div>
+          </div>
+          <!-- center counter -->
+          <div class="flex flex-col gap-y-7 max-w-[350px] p-5 shadow-2xl">
+            <p class="text-3xl">Joy Ma Kali</p>
+            <span id="joy-ma-count" class="text-4xl">0</span>
+            <div>
+              <button class="add shadow-lg hover:shadow-red-500/50">
+                INCRIMENT
+              </button>
+              <button class="sub shadow-lg hover:shadow-red-500/50">
+                DECRIMENT
+              </button>
+            </div>
+          </div>
+          <!-- right counter -->
+          <div class="flex flex-col gap-y-7 max-w-[350px] p-5 shadow-2xl">
+            <p class="text-3xl">Joy baba Vola Nath</p>
+            <span id="vola-nath-count" class="text-4xl">0</span>
+            <div>
+              <button class="add shadow-lg hover:shadow-red-500/50">
+                INCRIMENT
+              </button>
+              <button class="sub shadow-lg hover:shadow-red-500/50">
+                DECRIMENT
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="reset bg-yellow-500 py-3 px-7 rounded-lg text-white font-bold shadow-lg hover:shadow-red-500/50 mb-10"
+        >
+          RESET ALL COUNTER
+        </button>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
