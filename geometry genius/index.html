@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-4">
+    <main class="flex md:flex-row justify-between flex-col-reverse">
+      <!-- left continer -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-20 basis-3/4">
+        <!-- Triangle -->
+        <div
+          class="card card-compact max-w-96 bg-base-100 shadow-xl text-center"
+        >
+          <figure>
+            <img src="images/triangle.png" alt="Shoes" />
+          </figure>
+          <div class="card-body space-y-3">
+            <h2 class="card-title mx-auto">Triangle</h2>
+            <p>Area (A) =0.5 x b x h</p>
+            <div class="space-x-5">
+              <input type="text" placeholder="b" class="w-16 p-1" id="base" />
+              <span>cm</span>
+              <input type="text" placeholder="h" class="w-16 p-1" id="hight" />
+              <span>cm</span>
+
+              <h3 class="text-xl font-bold my-2">
+                Area: <span class="triangleresult"></span>
+              </h3>
+            </div>
+            <div class="card-actions">
+              <button class="btn block w-full bg-[#1090D8] btn-primary">
+                Calculation
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Rectangle -->
+        <div
+          class="card card-compact max-w-96 bg-base-100 shadow-xl text-center"
+        >
+          <figure>
+            <img src="images/rectangle.png" alt="Shoes" />
+          </figure>
+          <div class="card-body space-y-3">
+            <h2 class="card-title mx-auto">Rectangle</h2>
+            <p>Area (A) = w x l</p>
+            <div class="space-x-5">
+              <input
+                type="text"
+                placeholder="b"
+                class="w-16 p-1"
+                id="rectanglewidth"
+              />
+              <span>cm</span>
+              <input
+                type="text"
+                placeholder="h"
+                class="w-16 p-1"
+                id="ractanglelength"
+              />
+              <span>cm</span>
+              <h3 class="text-xl font-bold my-2">
+                Area: <span class="recresult"></span>
+              </h3>
+            </div>
+            <div class="card-actions">
+              <button class="btn block w-full bg-[#1090D8] btn-primary">
+                Calculation
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Parallelogram -->
+        <div
+          class="card card-compact max-w-96 bg-base-100 shadow-xl text-center"
+        >
+          <figure>
+            <img src="images/parallelogram.png" alt="Shoes" />
+          </figure>
+          <div class="card-body space-y-3">
+            <h2 class="card-title mx-auto">Parallelogram</h2>
+            <p>Area (A) = b x h</p>
+            <div class="space-x-5">
+              <input
+                type="text"
+                placeholder="b"
+                class="w-16 p-1"
+                id="parallebase"
+              />
+              <span>cm</span>
+              <input
+                type="text"
+                placeholder="h"
+                class="w-16 p-1"
+                id="parallehight"
+              />
+              <span>cm</span>
+            </div>
+            <h3 class="text-xl font-bold my-2">
+              Area: <span class="parallelogramresult"></span>
+            </h3>
+            <div class="card-actions">
+              <button class="btn block w-full bg-[#1090D8] btn-primary">
+                Calculation
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Rhombus -->
+        <div
+          class="card card-compact max-w-96 bg-base-100 shadow-xl text-center"
+        >
+          <figure>
+            <img src="images/rhombus.png" alt="Shoes" />
+          </figure>
+          <div class="card-body space-y-3">
+            <h2 class="card-title mx-auto">Rhombus</h2>
+            <p>Area (A) =0.5 x d<sub>1</sub> x d <sub>2</sub></p>
+            <div class="space-x-5">
+              <input
+                type="text"
+                placeholder="d"
+                class="w-16 p-1"
+                id="rhombusd1"
+              />
+
+              <span>cm</span>
+              <input
+                type="text"
+                placeholder="d"
+                class="w-16 p-1"
+                id="rhombusd2"
+              />
+              <span>cm</span>
+              <h3 class="text-xl font-bold my-2">
+                Area: <span class="rhombusresult"></span>
+              </h3>
+            </div>
+            <div class="card-actions">
+              <button class="btn block w-full bg-[#1090D8] btn-primary">
+                Calculation
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Pentagon  -->
+        <div
+          class="card card-compact max-w-96 bg-base-100 shadow-xl text-center"
+        >
+          <figure>
+            <img src="images/pentagon.png" alt="Shoes" />
+          </figure>
+          <div class="card-body space-y-3">
+            <h2 class="card-title mx-auto">Pentagon</h2>
+            <p>Area (A) =0.5 x p x b</p>
+            <div class="space-x-5">
+              <input
+                type="text"
+                placeholder="p"
+                class="w-16 p-1"
+                id="pentagon1"
+              />
+              <span>cm</span>
+              <input
+                type="tex  t"
+                placeholder="b"
+                class="w-16 p-1"
+                id="pentagon1"
+              />
+              <span>cm</span>
+            </div>
+            <h3 class="text-xl font-bold my-2">
+              Area: <span class="pentagonresult"></span>
+            </h3>
+            <div class="card-actions">
+              <button class="btn block w-full bg-[#1090D8] btn-primary">
+                Calculation
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Ellipse -->
+        <div
+          class="card card-compact max-w-96 bg-base-100 shadow-xl text-center"
+        >
+          <figure>
+            <img src="images/ellipse.png" alt="Shoes" />
+          </figure>
+          <div class="card-body space-y-3">
+            <h2 class="card-title mx-auto">Ellipse</h2>
+            <p>Area (A) = πab</p>
+            <div class="space-x-5">
+              <input
+                type="text"
+                placeholder="a"
+                class="w-16 p-1"
+                id="ellipsea"
+              />
+              <span>cm</span>
+              <input
+                type="text"
+                placeholder="b"
+                class="w-16 p-1"
+                id="ellipseb"
+              />
+              <span>cm</span>
+            </div>
+            <h3 class="text-xl font-bold my-2">
+              Area: <span class="ellipseresult"></span>
+            </h3>
+            <div class="card-actions">
+              <button class="btn block w-full bg-[#1090D8] btn-primary">
+                Calculation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right continer -->
+      <div class="max-w-96 h-96 p-5 text-center">
+        <p>Aria Calculation</p>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
