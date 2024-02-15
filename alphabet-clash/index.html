@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alphabet-clash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <main
+      class="bg-[#1E1E1E] min-h-svh w-full text-white bg-[url(images/background.png)] bg-no-repeat bg-top"
+    >
+      <!-- open section -->
+      <section
+        class="flex justify-center items-center h-screen text-center"
+        id="home"
+      >
+        <div class="space-y-10">
+          <h1 class="text-8xl font-bold">ALPHABET CLASH</h1>
+          <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+          <button
+            class="btn py-2 px-4 bg-white text-black font-bold rounded-lg"
+          >
+            Play now
+          </button>
+        </div>
+      </section>
+
+      <!-- play ground  -->
+      <section class="space-y-10 hidden" id="play">
+        <!-- art bord -->
+        <div>
+          <div
+            class="artboard bg-[#FFFFFFB3] border-[20px] border-[#010313CC] rounded-xl artboard-horizontal phone-6 flex items-center justify-center mx-auto"
+          >
+            <p class="current-alpha text-7xl font-bold" id="alpha">H</p>
+          </div>
+        </div>
+        <!-- keyboard  -->
+        <div class="text-black">
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">q</kbd>
+            <kbd class="kbd">w</kbd>
+            <kbd class="kbd">e</kbd>
+            <kbd class="kbd">r</kbd>
+            <kbd class="kbd">t</kbd>
+            <kbd class="kbd">y</kbd>
+            <kbd class="kbd">u</kbd>
+            <kbd class="kbd">i</kbd>
+            <kbd class="kbd">o</kbd>
+            <kbd class="kbd">p</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">a</kbd>
+            <kbd class="kbd">s</kbd>
+            <kbd class="kbd">d</kbd>
+            <kbd class="kbd">f</kbd>
+            <kbd class="kbd">g</kbd>
+            <kbd class="kbd">h</kbd>
+            <kbd class="kbd">j</kbd>
+            <kbd class="kbd">k</kbd>
+            <kbd class="kbd">l</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">z</kbd>
+            <kbd class="kbd">x</kbd>
+            <kbd class="kbd">c</kbd>
+            <kbd class="kbd">v</kbd>
+            <kbd class="kbd">b</kbd>
+            <kbd class="kbd">n</kbd>
+            <kbd class="kbd">m</kbd>
+            <kbd class="kbd">/</kbd>
+          </div>
+        </div>
+        <!-- like and score -->
+        <div class="flex justify-between w-3/4 mx-auto">
+          <button
+            class="btn bg-purple-500 text-white font-bold px-6 hover:text-black"
+          >
+            Life <span id="life">5</span>
+          </button>
+          <button
+            class="btn bg-purple-500 text-white font-bold px-6 hover:text-black"
+          >
+            Score <span id="score">0</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- score -->
+      <section
+        class="flex items-center justify-center h-screen hidden"
+        id="score-section"
+      >
+        <div class="p-16 bg-[#FFFFFF12] rounded-xl text-center space-y-5">
+          <h1 class="text-5xl font-bold">
+            Score <span id="finalscore">14</span>
+          </h1>
+          <button
+            class="btn py-2 px-4 bg-white text-black font-bold rounded-lg"
+            id="play-agian"
+          >
+            Play Agian
+          </button>
+          <p>Practice will make you Pro</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
