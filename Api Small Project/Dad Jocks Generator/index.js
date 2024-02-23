@@ -1,9 +1,17 @@
 const btnEl = document.querySelector(".btn");
 
 const jockGenerator = async () => {
-  await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/winter")
+  await fetch("https://v2.jokeapi.dev/joke/Any")
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+      jockSet(data);
+    });
+};
+
+// jock set
+const jockSet = (data) => {
+  console.log(data);
+  document.getElementById("jocks").innerText = data.joke;
 };
 
 btnEl.addEventListener("click", jockGenerator);
