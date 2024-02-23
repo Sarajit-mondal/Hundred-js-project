@@ -10,7 +10,6 @@ const jockGenerator = async () => {
 
 // jock set
 const jockSet = (data) => {
-  console.log(data);
   document.getElementById("jocks").innerText = data.joke;
 };
 

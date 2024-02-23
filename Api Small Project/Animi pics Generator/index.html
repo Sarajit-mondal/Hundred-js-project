@@ -4,9 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <main class="flex justify-center items-center w-full h-svh">
+      <div
+        class="w-3/4 md:w-2/4 text-center bg-slate-300 rounded-2xl space-y-7 overflow-hidden [&>h1]:bg-green-500 [&>h1]:p-2 [&>h1]:text-white [&>h1]:font-bold"
+      >
+        <h1>Chosse Your Cat</h1>
+        <div id="img-container" class="hidden">
+          <img src="" alt="" class="w-72 h-72 rounded-full mx-auto" />
+        </div>
+        <button
+          type="button"
+          id="new-cat"
+          class="cursor-pointer bg-green-500 p-2 text-white w-full font-bold"
+        >
+          new cat
+        </button>
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
