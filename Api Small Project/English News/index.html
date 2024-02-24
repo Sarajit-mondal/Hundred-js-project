@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="w-full bg-blue-500">
+      <nav class="flex items-center justify-between py-4 px-10">
+        <h1 class="text-3xl font-extrabold text-white shadow-2xl">
+          Enlgish News
+        </h1>
+        <ul class="flex items-center space-x-5 text-white">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>New News</li></a>
+          <a href="#"><li>Famous News</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+        <div class="bg-white rounded-full flex items-stretch overflow-hidden">
+          <input
+            type="text"
+            placeholder="search here..."
+            class="flex-grow-1 px-5 border-none outline-none bg-transparent"
+          />
+          <button class="btn btn-secondary rounded-none">search</button>
+        </div>
+      </nav>
+    </header>
+    <main class="w-11/12 mx-auto m-10">
+      <article
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 [&>div]:shadow-2xl [&>div]:p-5 [&>div]:bg-slate-200 [&>div]:rounded-xl [&_img]:rounded-lg [&>div]:space-y-3 [&>div]:cursor-pointer"
+      >
+        <!-- <div>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt=""
+          />
+          <div class="px-2 [&>h1]:text-xl [&>h1]:font-bold">
+            <h1>title this is new title good</h1>
+            <p>writer :</p>
+            <small>publish time : 23/02/2024</small>
+            <p class="border-t-2 border-gray-400 mt-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+              cupiditate dicta obcaecati ipsam voluptate assumenda, quasi
+              facilis ipsum! Adipisci sed minima, aspernatur pariatur nulla
+              quisquam vero iusto molestiae quasi officia.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt=""
+          />
+          <div class="px-2 [&>h1]:text-xl [&>h1]:font-bold">
+            <h1>title this is new title good</h1>
+            <p>writer :</p>
+            <small>publish time : 23/02/2024</small>
+            <p class="border-t-2 border-gray-400 mt-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+              cupiditate dicta obcaecati ipsam voluptate assumenda, quasi
+              facilis ipsum! Adipisci sed minima, aspernatur pariatur nulla
+              quisquam vero iusto molestiae quasi officia.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt=""
+          />
+          <div class="px-2 [&>h1]:text-xl [&>h1]:font-bold">
+            <h1>title this is new title good</h1>
+            <p>writer :</p>
+            <small>publish time : 23/02/2024</small>
+            <p class="border-t-2 border-gray-400 mt-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+              cupiditate dicta obcaecati ipsam voluptate assumenda, quasi
+              facilis ipsum! Adipisci sed minima, aspernatur pariatur nulla
+              quisquam vero iusto molestiae quasi officia.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt=""
+          />
+          <div class="px-2 [&>h1]:text-xl [&>h1]:font-bold">
+            <h1>title this is new title good</h1>
+            <p>writer :</p>
+            <small>publish time : 23/02/2024</small>
+            <p class="border-t-2 border-gray-400 mt-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+              cupiditate dicta obcaecati ipsam voluptate assumenda, quasi
+              facilis ipsum! Adipisci sed minima, aspernatur pariatur nulla
+              quisquam vero iusto molestiae quasi officia.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt=""
+          />
+          <div class="px-2 [&>h1]:text-xl [&>h1]:font-bold">
+            <h1>title this is new title good</h1>
+            <p>writer :</p>
+            <small>publish time : 23/02/2024</small>
+            <p class="border-t-2 border-gray-400 mt-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+              cupiditate dicta obcaecati ipsam voluptate assumenda, quasi
+              facilis ipsum! Adipisci sed minima, aspernatur pariatur nulla
+              quisquam vero iusto molestiae quasi officia.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt=""
+          />
+          <div class="px-2 [&>h1]:text-xl [&>h1]:font-bold">
+            <h1>title this is new title good</h1>
+            <p>writer :</p>
+            <small>publish time : 23/02/2024</small>
+            <p class="border-t-2 border-gray-400 mt-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+              cupiditate dicta obcaecati ipsam voluptate assumenda, quasi
+              facilis ipsum! Adipisci sed minima, aspernatur pariatur nulla
+              quisquam vero iusto molestiae quasi officia.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt=""
+          />
+          <div class="px-2 [&>h1]:text-xl [&>h1]:font-bold">
+            <h1>title this is new title good</h1>
+            <p>writer :</p>
+            <small>publish time : 23/02/2024</small>
+            <p class="border-t-2 border-gray-400 mt-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+              cupiditate dicta obcaecati ipsam voluptate assumenda, quasi
+              facilis ipsum! Adipisci sed minima, aspernatur pariatur nulla
+              quisquam vero iusto molestiae quasi officia.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt=""
+          />
+          <div class="px-2 [&>h1]:text-xl [&>h1]:font-bold">
+            <h1>title this is new title good</h1>
+            <p>writer :</p>
+            <small>publish time : 23/02/2024</small>
+            <p class="border-t-2 border-gray-400 mt-2">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+              cupiditate dicta obcaecati ipsam voluptate assumenda, quasi
+              facilis ipsum! Adipisci sed minima, aspernatur pariatur nulla
+              quisquam vero iusto molestiae quasi officia.
+            </p>
+          </div>
+        </div> -->
+      </article>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
