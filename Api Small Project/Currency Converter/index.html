@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="w-full h-svh bg-blue-400 flex justify-center items-center">
+      <div class="bg-white p-10 rounded-xl shadow-xl flex gap-10">
+        <!-- left side -->
+        <div>
+          <input
+            type="number"
+            id="leftValue"
+            value="1"
+            class="border-2 border-gray-500 p-1 px-4 w-28 rounded-xl outline-none"
+          />
+          <select name="cars" id="leftside" class="p-1">
+            <option value="BDT">BDT</option>
+          </select>
+        </div>
+        <!-- right side -->
+        <div>
+          <input
+            type="number"
+            id="rightValue"
+            class="border-2 border-gray-500 p-1 px-4 w-28 rounded-xl outline-none"
+          />
+          <select name="cars" id="rightside" class="p-1">
+            <option value="USD">USD</option>
+          </select>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

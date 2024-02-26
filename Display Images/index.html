@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display image</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center w-full h-svh bg-blue-500">
+      <div class="mt-5">
+        <div class="mx-auto">
+          <img
+            src="images/gallery-1.jpg"
+            alt=""
+            class="w-96 mx-auto"
+            id="big-img"
+          />
+        </div>
+        <div
+          class="flex mx-auto [&>img]:w-40 m-5 gap-5 [&>img]:opacity-55 [&_img]:cursor-pointer"
+        >
+          <img src="images/gallery-1.jpg" alt="" class="small-img" />
+          <img src="images/gallery-2.jpg" alt="" class="small-img" />
+          <img src="images/gallery-3.jpg" alt="" class="small-img" />
+          <img src="images/gallery-4.jpg" alt="" class="small-img" />
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
