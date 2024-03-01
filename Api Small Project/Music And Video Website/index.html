@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music and Video website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="w-11/12 mx-auto my-5">
+      <nav class="flex justify-between p-5">
+        <img src="Logo.png" alt="" />
+        <button
+          id="sort-by-view"
+          class="btn bg-gray-500 py-2 px-4 text-white font-bold rounded-lg"
+        >
+          Sort by view
+        </button>
+        <button
+          class="btn bg-red-500 py-2 px-4 text-white font-bold rounded-lg"
+        >
+          Blog
+        </button>
+      </nav>
+    </header>
+    <!-- header section ends here -->
+
+    <!-- main section start here -->
+    <main class="w-11/12 mx-auto my-10">
+      <!-- buttons section  -->
+      <section>
+        <div id="btn-container" class="space-x-7 text-center">
+          <!-- <button
+            class="btn bg-red-500 py-2 px-4 text-white font-bold rounded-lg"
+          >
+            All
+          </button>
+          <button
+            class="btn py-2 px-4 bg-gray-500 text-white font-bold rounded-lg"
+          >
+            Music
+          </button>
+          <button
+            class="btn py-2 px-4 bg-gray-500 text-white font-bold rounded-lg"
+          >
+            Comedy
+          </button>
+          <button
+            class="btn py-2 px-4 bg-gray-500 text-white font-bold rounded-lg"
+          >
+            Drawing
+          </button> -->
+        </div>
+      </section>
+
+      <!-- video and music section -->
+      <section class="my-10">
+        <div
+          id="video-music-container"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10"
+        >
+          <!-- <div class="card card-compact w-auto bg-base-100 shadow-xl">
+            <figure class="w-full relative">
+              <img src="${d.thumbnail}" class="h-48 w-full" alt="Shoes" />
+              <span
+                class="absolute right-10 bottom-10 bg-gray-700 px-3 py-1 rounded-xl text-white font-bold"
+                >3hrs 56 min ago</span>
+            </figure>
+            <div class="card-body">
+              <div class="flex space-x-3">
+                <img
+                  src="${d.authors[0].profile_picture}"
+                  alt=""
+                  class="w-16 h-16 rounded-full"
+                />
+                <h2 class="card-title">${d.authors[0].profile_name}</h2>
+              </div>
+              <p>${d.title}<span></span></p>
+              <p>${d.others.views}</p>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- video container ends -->
+        <!-- video container ends -->
+        <!-- video container ends -->
+        <!-- video container ends -->
+
+        <div id="drawing" class="text-center space-y-5 mt-10 hidden">
+          <img src="Icon.png" alt="" class="mx-auto" />
+          <p class="text-3xl font-bold">
+            Oops!! Sorry, There is no <br />
+            content here
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- main section end here -->
+
+    <!-- javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>
