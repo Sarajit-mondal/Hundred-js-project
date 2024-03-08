@@ -2,7 +2,7 @@ const starEl = document.querySelectorAll(".fa-regular");
 
 const progreesBar = document.getElementById("progrees-bar");
 const stepWidth = 240 / starEl.length;
-
+progreesBar.style.width = stepWidth + "px";
 starEl.forEach((star, index) => {
   star.addEventListener("click", () => {
     const value = index + 1;

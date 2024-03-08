@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="w-11/12 md:w-2/4 mx-auto">
+      <div
+        id="add"
+        class="bg-slate-400 inline-block shadow-2xl border-2 size-20 mt-10 cursor-pointer"
+      >
+        <span class="text-6xl flex justify-center font-bold">+</span>
+      </div>
+      <div
+        id="notes-container"
+        class="[&>textarea]:border-2 [&>textarea]:border-black [&>textarea]:resize-none [&>textarea]:rounded-xl [&>textarea]:my-2 [&>textarea]:p-5 [&>textarea]:outline-none [&>textarea]:shadow-2xl [&>textarea]:w-full"
+      >
+        <textarea placeholder="empty-note"></textarea>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
